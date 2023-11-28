@@ -83,4 +83,6 @@ The online bookstore application follows a typical three-tier architecture, cons
 - SonarQube is integrated into the development process to analyze code quality.
 - Code analysis covers aspects such as code smells, bugs, security vulnerabilities, and code duplications.
 
+![image](./images/sonarqube_analysis.png)
+
 This system architecture leverages modern and widely-used technologies to ensure a scalable, maintainable, and secure online bookstore application. It encourages separation of concerns, ease of development, and collaboration among frontend and backend teams. Continuous integration, deployment automation, and containerization contribute to a streamlined development and deployment process.
