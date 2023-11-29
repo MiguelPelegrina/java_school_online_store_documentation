@@ -1,17 +1,23 @@
 site_name: Online bookstore
-site_url: https://example.com/
+nav:
+  - 'index.md'
+  - 'requirements.md'
+  - 'system_architecture.md'
+  - 'database.md'
+  - API Specifications: "http://localhost:8081/swagger-ui/index.html"
 theme:
   name: material
   features:
-    - navigation.tabs
-    - navigation.sections
-    - toc.integrate
-    - navigation.top
-    - search.suggest
-    - search.highlight
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - toc.integrate
   language: en
   palette:
     - scheme: default
