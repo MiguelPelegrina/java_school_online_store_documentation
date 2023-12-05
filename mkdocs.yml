@@ -4,7 +4,7 @@ nav:
   - 'requirements.md'
   - 'system_architecture.md'
   - 'database.md'
-  - API Specifications: "http://localhost:8081/swagger-ui/index.html"
+  - API Specifications: "http://127.0.0.1:8081/swagger-ui/index.html"
 theme:
   name: material
   features:
