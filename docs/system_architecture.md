@@ -6,81 +6,80 @@ The online bookstore application follows a typical three-tier architecture, cons
 
 ### 1.1. Frontend (Presentation Layer)
 
-- Developed using Angular, a robust front-end framework.
-- Utilizes TypeScript for enhanced static typing and object-oriented programming support.
-- Responsive and dynamic user interface for seamless user interactions.
+- Developed using Angular, a robust front-end framework for building dynamic and responsive user interfaces.
+- Utilizes TypeScript for enhanced static typing and object-oriented programming support that enhances the development process.
+- Responsive and dynamic user interface for seamless user interactions through HTML and CSS, two standard web technologies for structuring and styling web pages.
 
 ### 1.2. Backend (Business Logic Layer)
 
 - Implemented using Spring Boot with Java, providing a scalable and modular backend architecture.
 - Adheres to the Model-View-Controller (MVC) design pattern for separation of concerns.
-- Utilizes Java for business logic implementation, RESTful APIs for communication, and Spring Security for authentication and authorization.
+- Utilizes Java, a widely-used programming language for building scalable and maintainable backend applications.
+- Spring Security provides robust authentication and authorization mechanisms.
 
 ### 1.3. Database (Data Storage Layer)
 
-- PostgreSQL is chosen as the relational database management system (RDBMS).
+- PostgreSQL, an open-source relational database system known for its reliability and extensibility, is chosen as the relational database management system (RDBMS).
+- JDBC (Java Database Connectivity) is a Java API used for connecting and interacting with relational databases.
 - Ensures data consistency, integrity, and reliability.
 - Tables designed to represent entities such as users, books, and orders.
 
-### 2. Technology Stack
+### 2. Communication Protocols
 
-#### 2.1. Frontend Technologies
+The interaction between the frontend and backend is orchestrated through carefully chosen communication protocols, ensuring efficiency, flexibility, and maintainability.
 
-- Angular: A TypeScript-based framework for building dynamic and responsive user interfaces.
-- TypeScript: Enhances the development process with static typing and object-oriented programming features.
-- HTML/CSS: Standard web technologies for structuring and styling web pages.
--
+- RESTful APIs serve as the architectural backbone, providing a standardized and resource-oriented communication channel between the frontend and backend. This paradigm embraces stateless interactions, allowing the frontend to initiate requests and receive responses, creating a coherent and predictable model for information exchange.
+- The language in which data converses between the frontend and backend is carefully curated to optimize readability, interoperability, and efficiency. Herein lies the adoption of the JavaScript Object Notation (JSON) format.
 
-#### 2.2. Backend Technologies
+### 3. Deployment
 
-- Spring Boot: A powerful and convention-over-configuration framework for building Java-based microservices.
-- Java: A widely-used programming language for building scalable and maintainable backend applications.
-- Spring Security: Provides robust authentication and authorization mechanisms.
-- JavaDoc:
+A robust deployment strategy is essential for ensuring agility, reliability, and scalability. To achieve this, the system leverages a comprehensive deployment approach, including:
 
-#### 2.3. Database System
+- Continuous Integration/Continuous Deployment (CI/CD) pipeline via GitHub Actions for automated testing and deployment. This not only expedites the delivery of new features and updates but also guarantees the stability of the application through rigorous testing.
+- Docker containers for packaging and deployment to ensure consistency across environments. This ensures seamless deployment across diverse environments, promoting compatibility and reliability.
+- Kubernetes orchestrates and manages the deployment, scaling, and operation of application containers. This container orchestration platform introduces an additional layer of automation, facilitating efficient resource utilization, load balancing, and fault tolerance.
 
-- PostgreSQL: An open-source relational database system known for its reliability and extensibility.
-- JDBC (Java Database Connectivity): Java API for connecting and interacting with relational databases.
+### 4. Version Control
 
-### 3. Communication Protocols
+Version control is the backbone of collaborative software development, ensuring order, traceability, and collaboration among the development team. In the realm of the Online Bookstore Application, version control is meticulously orchestrated, leveraging industry-standard tools and practices.
 
-- Frontend communicates with the backend through RESTful APIs.
-- Data exchange between frontend and backend is in JSON format.
+- In the digital tapestry of version control, the Online Bookstore Application relies on GitHub as its central repository hosting service, adding a layer of collaboration and visibility to the development process.
 
-### 4. Deployment
+### 5. Development Environment
 
-- Continuous Integration/Continuous Deployment (CI/CD) pipeline for automated testing and deployment.
-- Docker containers for packaging and deployment to ensure consistency across environments.
+Developers, as architects of the application's codebase, utilize specialized integrated development environments tailored to the technologies employed:
 
-### 5. Version Control
+- Feature-Rich Java Development with IntelliJ IDEA, offering an array of features such as intelligent code completion, advanced debugging tools, and a rich ecosystem of plugins. This robust IDE streamlines the development of the server-side components, ensuring code quality and developer productivity.
+- Versatile Web Development: Visual Studio Code emerges as the tool of choice for Angular and TypeScript development. Its lightweight yet powerful features, including integrated Git control and debugging support
+- PgAdmin 4 serves as the graphical user interface for managing PostgreSQL databases. It enables developers to interact with the database, perform queries, and visualize the database structure. This user-friendly tool enhances the efficiency of database-related tasks, promoting effective collaboration between developers and the database management system.
 
-- Git is employed as the version control system.
-- Feature branching and pull request workflow for collaborative development.
+### 6. Documentation
 
-### 6. Development Environment
+Documentation serves as the compass that guides developers, stakeholders, and other contributors through development. It encompasses two essential facets: the overarching technical specification document and the detailed API documentation.
 
-- Developers use integrated development environments (IDEs) such as IntelliJ IDEA for Java and Visual Studio Code for Angular/TypeScript.
-- Local development instances of PostgreSQL for database testing.
+#### 6.1. Technical Specification Document
 
-### 7. Documentation
+- MkDocs is the chosen tool for the creation and upkeep of the technical specification document. Its simplicity and versatility empower developers to structure and organize documentation in a coherent manner.
 
-#### 7.1. Technical Specification Document
+#### 6.2. API documentation
 
-- MkDocs is used for creating and maintaining technical documentation.
-- Markdown files are authored using MkDocs to provide an organized and readable format.
-- The documentation covers various aspects, including system architecture, API specifications, and user guides.
+Javadoc and OpenAPI are used in conjuction to generate an extensive documentation.
 
-#### 7.2. API documentation
+##### 6.2.1. Javadoc
 
-- Javadoc is utilized to automatically generate API documentation from inline comments in the Java source code.
-- Documentation for classes, methods, and important code structures is included directly within the code.
-- Javadoc comments are written directly within the Java source files.
-- Javadoc generates HTML documentation accessible via a designated URL.
+- Javadoc is employed to automatically generate API documentation by extracting information from inline comments within the Java source code. This approach ensures that the API documentation remains closely tied to the source code, minimizing the risk of documentation becoming outdated.
+- It also generates HTML documentation, making it easily accessible through a designated URL. This user-friendly format allows developers to navigate and comprehend the API specifications effortlessly, fostering a deeper understanding of the codebase.
 
-### 8. Code Quality Analysis:
+##### 6.2.2. OpenAPI
 
-- SonarQube is integrated into the development process to analyze code quality.
+- OpenAPI, formerly known as Swagger, takes center stage in documenting the API specifications. Its declarative nature allows for the concise and clear representation of the API structure, endpoints, request-response formats, and authentication mechanisms.
+- The integration of OpenAPI provides an interactive API exploration experience, allowing developers and stakeholders to interact with the API documentation dynamically. This functionality enhances understanding and facilitates smoother integration of frontend and backend components.
+
+### 7. Code Quality Analysis
+
+Ensuring the integrity and quality of the codebase is important, therefore SonarQube is being used to ensure that the code quality holds up to certain standards.
+
+- SonarQube, formerly known as Sonar, is seamlessly integrated into the development pipeline, actively scrutinizing the codebase for various dimensions of quality.
 - Code analysis covers aspects such as code smells, bugs, security vulnerabilities, and code duplications.
 
 ![image](./images/sonarqube_analysis.png)
