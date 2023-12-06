@@ -84,4 +84,13 @@ Ensuring the integrity and quality of the codebase is important, therefore Sonar
 
 ![image](./images/sonarqube_analysis.png)
 
+The following patterns were excluded, following the suggestions from the [SonarQube Documentation](https://docs.sonarsource.com/sonarqube/8.9/project-administration/narrowing-the-focus/#patterns), which includes mainly generated code by the Lombok library:
+
+- Folder
+    - Security
+- Files
+    - DTO
+    - Entity
+    - Request
+
 This system architecture leverages modern and widely-used technologies to ensure a scalable, maintainable, and secure online bookstore application. It encourages separation of concerns, ease of development, and collaboration among frontend and backend teams. Continuous integration, deployment automation, and containerization contribute to a streamlined development and deployment process.
