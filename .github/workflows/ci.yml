@@ -23,8 +23,12 @@ jobs:
       # - run: pip install pillow cairosvg
       # - run: mkdocs gh-deploy --force
       
-      - name: Check out the repo
-        uses: actions/checkout@v4
+      - name: Docker login
+        env: 
+          DOCKER_USER: ${{ secrets.DOCKER_USERNAME }}
+          DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+        run: 
+          docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
       
       - name: Log in to Docker Hub
         uses: docker/login-action@v1
