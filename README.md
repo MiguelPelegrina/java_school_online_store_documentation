@@ -1,0 +1,1 @@
+This repository is part of my final project for the Java School of T-Systems Iberia and contains the documentation. For further information please refer to my documentation at https://miguelpelegrina.github.io/java_school_online_store_documentation/.
