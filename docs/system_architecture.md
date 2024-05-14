@@ -9,20 +9,18 @@ The online bookstore application follows a typical three-tier architecture, cons
 - Developed using Angular, a robust front-end framework for building dynamic and responsive user interfaces.
 - Utilizes TypeScript for enhanced static typing and object-oriented programming support that enhances the development process.
 - Responsive and dynamic user interface for seamless user interactions through HTML and CSS, two standard web technologies for structuring and styling web pages.
+- The UI components are part of the Angular Material library.
 
 ### 1.2. Backend (Business Logic Layer)
 
 - Implemented using Spring Boot with Java, providing a scalable and modular backend architecture.
-- Adheres to the Model-View-Controller (MVC) design pattern for separation of concerns.
 - Utilizes Java, a widely-used programming language for building scalable and maintainable backend applications.
 - Spring Security provides robust authentication and authorization mechanisms.
+- JUnit and Mockito were used write unit tests.
 
 ### 1.3. Database (Data Storage Layer)
 
 - PostgreSQL, an open-source relational database system known for its reliability and extensibility, is chosen as the relational database management system (RDBMS).
-- JDBC (Java Database Connectivity) is a Java API used for connecting and interacting with relational databases.
-- Ensures data consistency, integrity, and reliability.
-- Tables designed to represent entities such as users, books, and orders.
 
 ### 2. Communication Protocols
 
@@ -87,9 +85,9 @@ Ensuring the integrity and quality of the codebase is important, therefore Sonar
 The following patterns were excluded, following the suggestions from the [SonarQube Documentation](https://docs.sonarsource.com/sonarqube/8.9/project-administration/narrowing-the-focus/#patterns), which includes mainly generated code by the Lombok library:
 
 - Folder
-    - Security
+  - Security
 - Files
-    - DTO
-    - Entity
+  - DTO
+  - Entity
 
 This system architecture leverages modern and widely-used technologies to ensure a scalable, maintainable, and secure online bookstore application. It encourages separation of concerns, ease of development, and collaboration among frontend and backend teams. Continuous integration, deployment automation, and containerization contribute to a streamlined development and deployment process.

@@ -1,5 +1,7 @@
 # Requirements
 
+This web application was developed as my final project for the Java School of T-Systems Iberia. You can find the specific task [here](files/Java%20School%20online%20store%20task.docx.pdf){:Java School online store task}. After analysing the task I established the following requirements.
+
 ## Functional Requirements
 
 ### 1. User Authentication and Authorization:
