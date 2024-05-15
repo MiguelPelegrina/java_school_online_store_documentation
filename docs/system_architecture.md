@@ -16,7 +16,9 @@ The online bookstore application follows a typical three-tier architecture, cons
 - Implemented using Spring Boot with Java, providing a scalable and modular backend architecture.
 - Utilizes Java, a widely-used programming language for building scalable and maintainable backend applications.
 - Spring Security provides robust authentication and authorization mechanisms.
-- JUnit and Mockito were used write unit tests.
+- JPA and Hibernate work together to handle data persistence tasks.
+- QueryDSL simplifies writing database queries.
+- JUnit and Mockito were used to write unit tests.
 
 ### 1.3. Database (Data Storage Layer)
 
@@ -24,24 +26,19 @@ The online bookstore application follows a typical three-tier architecture, cons
 
 ### 2. Communication Protocols
 
-The interaction between the frontend and backend is orchestrated through carefully chosen communication protocols, ensuring efficiency, flexibility, and maintainability.
-
 - RESTful APIs serve as the architectural backbone, providing a standardized and resource-oriented communication channel between the frontend and backend. This paradigm embraces stateless interactions, allowing the frontend to initiate requests and receive responses, creating a coherent and predictable model for information exchange.
-- The language in which data converses between the frontend and backend is carefully curated to optimize readability, interoperability, and efficiency. Herein lies the adoption of the JavaScript Object Notation (JSON) format.
 
 ### 3. Deployment
 
 A robust deployment strategy is essential for ensuring agility, reliability, and scalability. To achieve this, the system leverages a comprehensive deployment approach, including:
 
-- Continuous Integration/Continuous Deployment (CI/CD) pipeline via GitHub Actions for automated testing and deployment. This not only expedites the delivery of new features and updates but also guarantees the stability of the application through rigorous testing.
 - Docker containers for packaging and deployment to ensure consistency across environments. This ensures seamless deployment across diverse environments, promoting compatibility and reliability.
 - Kubernetes orchestrates and manages the deployment, scaling, and operation of application containers. This container orchestration platform introduces an additional layer of automation, facilitating efficient resource utilization, load balancing, and fault tolerance.
+- Continuous Integration/Continuous Deployment (CI/CD) pipeline via GitHub Actions and Kubernetes for automated testing and deployment. This not only expedites the delivery of new features and updates but also guarantees the stability of the application through rigorous testing.
 
 ### 4. Version Control
 
-Version control is the backbone of collaborative software development, ensuring order, traceability, and collaboration among the development team. In the realm of the Online Bookstore Application, version control is meticulously orchestrated, leveraging industry-standard tools and practices.
-
-- In the digital tapestry of version control, the Online Bookstore Application relies on GitHub as its central repository hosting service, adding a layer of collaboration and visibility to the development process.
+Version control is the backbone of collaborative software development, ensuring order, traceability, and collaboration among developers. The Online Bookstore Application relies on GitHub as its central repository hosting service.
 
 ### 5. Development Environment
 
@@ -53,11 +50,11 @@ Developers, as architects of the application's codebase, utilize specialized int
 
 ### 6. Documentation
 
-Documentation serves as the compass that guides developers, stakeholders, and other contributors through development. It encompasses two essential facets: the overarching technical specification document and the detailed API documentation.
+Documentation serves as the compass that guides developers, stakeholders, and other contributors through development. It encompasses two essential facets: the overarching technical specification document and the detailed API documentation. Both are online and hosted on GitHub.
 
 #### 6.1. Technical Specification Document
 
-- MkDocs is the chosen tool for the creation and upkeep of the technical specification document. Its simplicity and versatility empower developers to structure and organize documentation in a coherent manner.
+- MkDocs is the chosen tool for the creation and upkeep of this technical specification document. Its simplicity and versatility empower developers to structure and organize documentation in a coherent manner.
 
 #### 6.2. API documentation
 
@@ -70,7 +67,7 @@ Javadoc and OpenAPI are used in conjuction to generate an extensive documentatio
 
 ##### 6.2.2. OpenAPI
 
-- OpenAPI, formerly known as Swagger, takes center stage in documenting the API specifications. Its declarative nature allows for the concise and clear representation of the API structure, endpoints, request-response formats, and authentication mechanisms.
+- OpenAPIs declarative nature allows for the concise and clear representation of the API structure, endpoints, request-response formats, and authentication mechanisms.
 - The integration of OpenAPI provides an interactive API exploration experience, allowing developers and stakeholders to interact with the API documentation dynamically. This functionality enhances understanding and facilitates smoother integration of frontend and backend components.
 
 ### 7. Code Quality Analysis
@@ -90,4 +87,11 @@ The following patterns were excluded, following the suggestions from the [SonarQ
   - DTO
   - Entity
 
-This system architecture leverages modern and widely-used technologies to ensure a scalable, maintainable, and secure online bookstore application. It encourages separation of concerns, ease of development, and collaboration among frontend and backend teams. Continuous integration, deployment automation, and containerization contribute to a streamlined development and deployment process.
+This system architecture leverages modern and widely-used technologies to ensure a scalable, maintainable, and secure web application. It encourages separation of concerns and ease of development. Continuous integration, deployment automation, and containerization contribute to a streamlined development and deployment process.
+
+### Future development
+
+Looking ahead, in the future I would like to add the following improvements to the code:
+
+- Testing the frontend with tools like Nightwatch.
+- Using cloud services.
