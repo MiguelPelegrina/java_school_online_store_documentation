@@ -2,7 +2,7 @@
 
 ## 1. Code
 
-The code of the project is split into several repositories to facilitate deployment and testing, improve the maintability and implement the separation of concerns. You can find the repositories following these links:
+The code of the project is split into several repositories to facilitate deployment and testing, improve the maintainability and implement the separation of concerns. You can find the repositories following these links:
 
 - [Java Spring Boot application](https://github.com/MiguelPelegrina/java_school_online_store_api)
 - [Angular application](https://github.com/MiguelPelegrina/java_school_online_store_frontend)
